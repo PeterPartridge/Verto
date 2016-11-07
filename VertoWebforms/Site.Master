@@ -1,0 +1,151 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="VertoWebforms.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+     <webopt:bundlereference runat="server" path="~/Content/css" />
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+</head>
+<body>
+    <form runat="server">
+              <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="respond" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                   <%--Site Scripts--%>
+                 <asp:ScriptReference path="~/Scripts/foundation.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/foundation.core.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/foundation.orbit.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/foundation.util.mediaQuery.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/foundation.responsiveToggle.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/foundation.responsiveToggle.js" />
+                <asp:ScriptReference path="~/Scripts/plugins/foundation.util.keyboard.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/foundation.util.motion.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/foundation.interchange.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/foundation.util.mediaQuery.js" />
+                <asp:ScriptReference Path ="~/Scripts/plugins/foundation.util.timerAndImageLoader.js" />
+                <asp:ScriptReference Path="~/Scripts/plugins/foundation.util.touch.js" />
+                <asp:ScriptReference Path="~/Scripts/Slick/slick.min.js" />
+                           </Scripts>
+        </asp:ScriptManager>
+          <div class="row maxWidth">
+                <div class="title-bar small-12 columns titleGrayBackground">
+                <div class="row">
+                    <div class="top-bar-left titleGrayBackground small-6 large-offset-2 columns stacked-for-medium">
+                        <div class="menu-centered">
+                        <ul class="menu">
+                            <li class="menu-text">
+                                <img src="Images/HeaderFooterImages/VertoLogoDesktop.png" /></li>
+                        </ul>
+                            </div>
+                    </div>
+                    <div class="top-bar-right small-9 medium-3 columns moveObjectDown" data-responsive-toggle="responsive-menu" data-hide-for="large">
+                        <strong>Menu</strong>
+                        <button class="menu-icon dark" type="button" data-toggle></button>
+                    </div>
+                </div>
+            </div>
+              <div class="titleGrayBackground small-12 columns maxWidth">
+                  <div id="responsive-menu">
+                      <div class="row grayBackground centerItem">
+                          <div class="top-bar-left large-8 columns">
+                              <ul class="menu">
+                                  <li class="menu-item">
+                                      <a>Our Products</a>
+                                  </li>
+                                  <li class="menu-item">
+                                      <a>Where to Buy</a>
+                                  </li>
+                                  <li class="menu-item">
+                                      <a>News & Reviews</a>
+                                  </li>
+                                  <li class="menu-item">
+                                      <a>Help & Support</a>
+                                  </li>
+                                  <li class="menu-item">
+                                      <a>My Optricron</a>
+                                  </li>
+
+                              </ul>
+                          </div>
+
+                      </div>
+                  </div>
+                      <div class="top-bar-right barUp small-12 large-4 columns">
+                              <ul class="menu">
+                                  <li>
+                                      <input type="search" class="searchBox" placeholder="My Opticron..." /></li>
+                                  <li>
+                                      <button type="button" class="button fi-magnifying-glass searchBoxIcon"></button>
+                                  </li>
+                              </ul>
+                          </div>
+                  
+              </div>
+        <div class="small-12 columns maxWidth">
+        <div class="orbit small-12" data-orbit id="headerCaroselTablet">
+            <ul class="orbit-container sliderImages maxHeight">
+                <li class="orbit-slide is-active maxHeight">
+                    <img class="orbit-image" data-interchange="[Images/HeaderFooterImages/VertSliderMobile.png, small], [Images/HeaderFooterImages/VertSliderTablet.png, medium], [Images/HeaderFooterImages/VertoSliderDesktop.png, large]" alt="people meeting image"/>
+                    <!-- More slides... -->
+            </ul>
+            <nav class="orbit-bullets">
+                <button class="is-active" data-slide="0"><span class="show-for-sr"></span><span class="show-for-sr">Current Slide</span></button>
+                <button class="" data-slide="1"></button>
+                 <button class="" data-slide="2"></button>
+                <button class="" data-slide="3"></button>
+                <button class="" data-slide="4"></button>
+            </nav>
+        </div>
+      </div>
+        </div>
+        <div class="container">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <hr />
+            
+            
+        </div>
+        <footer class="small-12 columns gray-Background">
+            <div class="small-12  large-6 columns">
+                <div class="small-12 columns footerLeftText">
+                    <p>Optricon Unit 21, Titan Court, Laporte Way, Luton, Bedfordshire, LU4 8EF, UK</p>
+                </div>     
+            <div class="small-12 columns footerLeftText">
+                <a href="#">Sitmap</a>/<a href="#">Terms</a>/<a href="#">Privacy Policy</a>/<a href="#">Site By Verto</a>
+            </div>
+                </div>
+            <div class="small-12  large-6 columns">
+                <div class="small-12 columns footerRightText">
+                    <h3>call <a href="tele:01582726522"><b>01582726522</b></a></h3>
+                   <h4><b>email us</b> <a href="mailto:sales@opticron.co.uk">sales@opticron.co.uk</a></h4>
+                </div>
+                <div class="small-12 columns footerRightText">
+                  <h1><a class="fi-social-facebook"></a> | <a class="fi-social-twitter"></a> | <a class="fi-social-linkedin"></a> | <a class="fi-social-youtube"></a> | <a class="fi-social-google-plus"></a></h1>
+                </div>
+            </div>
+            </footer>
+        <script src="Scripts/app.js"></script>
+    </form>
+</body>
+</html>

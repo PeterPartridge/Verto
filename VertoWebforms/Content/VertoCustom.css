@@ -1,0 +1,335 @@
+﻿
+/*verto mobile view starting at 300pixels*/
+@media(min-width:18rem){
+    /*html changes*/
+      body{
+        background-color: white;
+}
+      h4{
+                      color: #6b6b6b;
+    font-family: sans-serif;
+      }
+
+    h2, h3{
+        text-align:center;
+            color: #6b6b6b;
+    font-family: sans-serif;
+    }
+
+    footer{
+    color:white;
+    background-color:#bfbfbf;
+    padding-bottom:2rem;
+}
+
+footer a{
+color:white;
+}
+
+footer h3, footer h4{
+    color:white;
+}
+
+img{
+    width:100%;
+}
+
+footer h1{
+    color:black;
+}
+
+/*foundation classes*/
+
+input[readonly]{
+    border:0;
+    background-color:white;
+}
+
+.menu-icon.dark:after {
+          background: #018444;
+    box-shadow: 0 7px 0 #018444,0 14px 0 #018444;
+    }
+
+    .button.success {
+        background-color: #009933;
+        padding: 0.6rem 2.2rem 0.6rem 1rem;
+    }
+
+    .top-bar, top-bar-right{
+        color:black;
+    }
+
+    textarea[readonly]{
+        background: white;
+    }
+
+    textarea[rows] {
+    height: 5rem;
+}
+
+    input[type=search] {
+    height: 1.6rem;
+    margin-bottom:0.6rem;
+}
+    .orbit-bullets {
+        bottom: 3.9rem;
+        left: 12.9rem;
+       width: 9rem;
+    }
+
+        .orbit-bullets button {
+ width: .9rem;
+    height: .9rem;
+        background-color: #fff6f6;
+        margin-left: 0.5rem;
+    }
+
+ .orbit-bullets button.is-active {
+     background-color: #17d02c;
+    width: .9rem;
+    height: .9rem;
+    border: 0.2rem solid white;
+    bottom: 0.2rem;
+    position: relative;
+}
+
+
+/*custome classes*/
+    .container {
+        max-width: 80rem;
+        width: auto;
+        margin: 2rem auto;
+    }
+
+.whiteFrame{
+    background-color:white;
+    text-align:center;
+    padding:1rem;
+}
+   .grayBackground{
+        background-color: #e3e4e5;
+        color: black;
+        padding: 1rem 1rem 0;
+    }
+   .titleGrayBackground{
+       background-color: #e3e4e5;
+        color: black;
+   }
+
+    footer.grayBackground{
+    background-color:#cccccc;
+    color:black;
+}
+ .top-bar-mobile-right{
+        width: 12rem;
+        padding-right:1rem;
+        float:right;
+    }
+
+.footerRightText h3{
+    font-size: 2em;
+    padding: 1rem 0 0 0;
+    text-align:left;
+    line-height: 0.8em;
+}
+
+.footerRightText h4{
+    font-size: 1em;
+    text-align:left;
+    line-height: 1.3rem;
+    padding-bottom:1rem;
+}
+
+.TopandBottomPadding{
+  margin:1rem 0;
+}
+
+.textBelowImage{
+    margin: 1rem 0;
+    overflow: hidden;
+    border: 0px;
+
+}
+
+.moveObjectDown{
+        top: 1rem;
+    position: relative;
+}
+
+
+.searchBoxIcon{
+    height: 1.3rem;
+    width: 0.4rem;
+    font-size: 1em;
+    padding: 0.1rem 1rem 1rem 0.1rem;
+    position: relative;
+    bottom: 0.3rem;
+    background-color:#bfbfbf;
+}
+
+.arrow{
+        width: 20%;
+    position: relative;
+    bottom: 3rem;
+}
+
+    .centerItem{
+    margin:1.2rem auto;
+    text-align:center;
+}
+     .maxHeight{
+     max-height:100%!important;
+     height:100%!important;
+ }
+.menuRight{
+    float:right;
+    padding-bottom:1.2rem;
+}
+
+/*slick changes*/
+    .slick-prev:before, .slick-next:before {
+        color: black;
+    }
+
+    .slick-slider {
+        margin: 1rem 2rem;
+    }
+
+
+
+
+}
+
+/*TABLET SIZE of 700 pixels or more*/
+@media(min-width:43.75rem) {
+
+
+/*foundation classes*/
+    .top-bar-right {
+        margin: 1rem;
+    }
+
+    .row {
+        margin-top: 0rem;
+    }
+
+    .searchBarRight {
+        position: relative;
+        left: 11rem;
+    }
+
+    .orbit-container {
+        height: 100%;
+    }
+
+ .orbit-bullets{
+left: 30rem;
+    bottom: 5.6rem;
+        width: 13rem;
+    }
+
+        .orbit-bullets button {
+width: 1.4rem;
+    height: 1.4rem;
+     margin-left: 0.7rem;
+    }
+
+ .orbit-bullets button.is-active {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: .3rem solid white;
+    bottom: 0.2rem;
+   
+}
+    .button.success{
+        margin-bottom:2rem;
+    }
+
+    /*custom classes*/
+.footerRightText h3{
+    padding-top:2rem;
+}
+.footerRightText h4{
+    padding-bottom:0;
+    padding-top:0;
+}
+
+.searchBoxIcon {
+        height: 1.55rem;
+            width: 1.55rem;
+    font-size: 1.3em;
+    }
+.menuRight{
+    float:right;
+    padding-bottom:1.2rem;
+}
+
+}
+
+/*Screens of 1280pxs or more*/
+@media(min-width:80rem) {
+
+/*foundation classes*/
+.orbit-bullets{
+        left: 82.58rem;
+        bottom: 4.74rem;
+    }
+
+        .orbit-bullets button {
+      width: 1.1rem;
+    height: 1.1rem;
+     margin-left: 0.7rem;
+    }
+
+ .orbit-bullets button.is-active {
+    width: 1.1rem;
+    height: 1.1rem;
+    border: 0.2rem solid white;
+
+   
+}
+
+.top-bar-right{
+    margin:0 0 1rem;
+    }
+
+.footerLeftText{
+    padding: 2rem;
+    font-size: 0.9em;
+}
+    /*Custom classes*/
+.repeaterImage{
+    width:20%;
+    margin:5rem;
+}
+
+/*html changes*/
+h4{
+    text-align:center;
+}
+
+.maxWidth{
+    max-width:100%;
+    padding:0;
+}
+.centerItem{
+    margin:0rem auto!important;
+    text-align:center;
+}
+
+.barUp{
+    bottom: 2rem;
+    position: relative;
+}
+
+   input[type=search] {
+        height: 2rem;
+    }
+
+    .searchBoxIcon {
+    height: 2rem;
+    width: 2rem;
+    font-size: 1.7em;
+}
+
+}
